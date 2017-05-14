@@ -686,6 +686,7 @@ public abstract class InputHandler extends KeyAdapter {
                 textArea.getToolkit().beep();
                 return;
             }
+            //Modified to allow conversion of tabs to spaces
             if (m_ConvertTabToSpaces) { //Static boolean on JEditTextArea
                 textArea.overwriteSetSelectedText("    ");
             } else {
